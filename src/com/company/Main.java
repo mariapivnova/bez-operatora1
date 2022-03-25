@@ -2,7 +2,7 @@ package com.company;
 import java.util.Scanner;
 import java.util.Scanner;
 public class Main {
-    private static int variable(int num1, int num2)
+    static int multiply(int num1, int num2)
     {
         if (num1 == 0 || num2 == 0)
             return 0;
@@ -23,10 +23,10 @@ public class Main {
     public static void main(final String[] args) {
         final Scanner scann = new Scanner(System.in);
         System.out.println("Введите первое число: ");
-        final int a = scann.nextInt();
+        final int num1 = scann.nextInt();
         System.out.println("Введите второе число: ");
-        final int b = scann.nextInt();
-        System.out.println("Результат умножения: ");
-        System.out.println(variable(a, b));
+        final int num2 = scann.nextInt();
+        System.out.println("Результат умножения: "+multiply(num1, num2));
+
     }
 }
